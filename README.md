@@ -10,4 +10,3 @@
 - Ensure that the new input entered by the user overwrites the old username passed to UserOutput
 - Add two-way-binding to your input (in UserInput) to also display the starting username
 - Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
-# react-complete-guide-the-base-syntax-assignment

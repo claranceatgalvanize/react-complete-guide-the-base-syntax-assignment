@@ -1,10 +1,16 @@
 import React from "react";
 
 const UserOutput = ({ username, changeOnClick }) => {
+  const body = {
+    padding: "2em",
+    textAlign: "center"
+  };
   return (
-    <div>
-      <p>Type in the input above or click the below text to change it.</p>
-      <p onClick={changeOnClick}>Hi, I'm {username}</p>
+    <div style={body}>
+      <p>
+        Type in the input above or click <br /> the below text to change it.
+      </p>
+      <h2 onClick={changeOnClick}>Hi, I'm {username}</h2>
     </div>
   );
 };

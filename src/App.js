@@ -9,9 +9,7 @@ class App extends Component {
       <div className="App">
         <h2>Reat Base Syntax</h2>
         <UserInput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
+        <UserOutput username="Bob" />
       </div>
     );
   }

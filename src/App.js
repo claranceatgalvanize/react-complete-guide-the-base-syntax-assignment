@@ -12,13 +12,21 @@ class App extends Component {
       username: newUsernameOnClick
     });
   };
+  changeUsernameOnInput = e => {
+    this.setState({
+      username: e.target.value
+    });
+  };
   render() {
     return (
       <div className="App">
         <h2>Reat Base Syntax</h2>
-        <UserInput />
+        <UserInput
+          username={this.state.username}
+          changeOnEvent={this.changeUsernameOnInput}
+        />
         <UserOutput
-          changeOnClick={this.changeUsernameOnClick.bind(this, "Foo")}
+          changeOnClick={this.changeUsernameOnClick.bind(this, "Simi")}
           username={this.state.username}
         />
       </div>

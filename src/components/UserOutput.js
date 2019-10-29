@@ -3,9 +3,8 @@ import React from "react";
 const UserOutput = ({ username, changeOnClick }) => {
   return (
     <div>
-      <h3 onClick={changeOnClick}>Hi, I'm {username}</h3>
-      <p>First paragraph</p>
-      <p>Second paragraph, to be manipulated</p>
+      <p>Type in the input above or click the below text to change it.</p>
+      <p onClick={changeOnClick}>Hi, I'm {username}</p>
     </div>
   );
 };
